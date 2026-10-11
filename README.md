@@ -34,7 +34,9 @@ Edit copy and links in `index.html`, the design in `styles.css`, and interaction
 
 ## Design and assets
 
-The portfolio uses static HTML, CSS, and JavaScript with a dark navy and mint theme, serif headings, a career timeline, and dashboard/architecture previews.
+The portfolio uses static HTML, CSS, and JavaScript with a black and violet theme, serif headings, a career timeline, and dashboard/architecture previews.
+
+GitHub and LinkedIn SVG icons come from Primer Octicons and Bootstrap Icons under the MIT License; their notices are retained in `index.html`.
 
 Content comes from Pragya Apurva’s Summer 2027 resume and the linked repositories. Project previews come from the corresponding project dashboards. Instrument Serif and DM Sans are distributed under the SIL Open Font License; see the included font license files.
 
