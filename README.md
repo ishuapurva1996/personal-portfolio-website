@@ -1,6 +1,8 @@
 # Pragya Apurva — Personal Portfolio
 
-A responsive data engineering portfolio featuring professional experience, education, technical skills, and three pipeline projects. The GitHub repository is private.
+A responsive data engineering portfolio featuring professional experience, education, technical skills, and three pipeline projects. The GitHub repository is public.
+
+**Portfolio:** [ishuapurva1996.github.io/personal-portfolio-website](https://ishuapurva1996.github.io/personal-portfolio-website/)
 
 ## Featured work
 
@@ -24,7 +26,7 @@ Open http://127.0.0.1:4173. To assemble static hosting output:
 node build.mjs
 ```
 
-Upload the generated `dist/` directory to a static host. Repository visibility and website audience are separate settings; this repository should remain private.
+GitHub Pages publishes the portfolio from the root of the `main` branch. Changes committed to `main` trigger a Pages deployment. No visitor sign-in is required. The `dist/` build can also be deployed to another static host.
 
 ## Updating the portfolio
 
