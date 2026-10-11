@@ -32,7 +32,7 @@ Edit copy and links in `index.html`, the design in `styles.css`, and interaction
 
 ## Design and assets
 
-Original implementation inspired by the formatting, structure, and visual style of [Priyanshu Singh’s portfolio](https://github.com/singhpriyanshu5/personal-portfolio-website): dark navy and mint colors, serif headings, data-themed geometry, timeline, and dashboard/architecture previews. The reference owner's code and personal assets are not included.
+The portfolio uses static HTML, CSS, and JavaScript with a dark navy and mint theme, serif headings, a career timeline, and dashboard/architecture previews.
 
 Content comes from Pragya Apurva’s Summer 2027 resume and the linked repositories. Project previews come from the corresponding project dashboards. Instrument Serif and DM Sans are distributed under the SIL Open Font License; see the included font license files.
 
