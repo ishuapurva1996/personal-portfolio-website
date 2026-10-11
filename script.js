@@ -7,7 +7,7 @@
   const menuButton = document.querySelector('#menu-toggle');
   function updateThemeLabel() {
     themeButton.setAttribute('aria-label', root.dataset.theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-    document.querySelector('meta[name="theme-color"]').content = root.dataset.theme === 'light' ? '#f8f9fc' : '#080d17';
+    document.querySelector('meta[name="theme-color"]').content = getComputedStyle(root).getPropertyValue('--bg').trim();
   }
   updateThemeLabel();
   themeButton.addEventListener('click', () => {
