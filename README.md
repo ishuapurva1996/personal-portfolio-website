@@ -1,6 +1,6 @@
 # Pragya Apurva — Personal Portfolio
 
-A responsive data engineering portfolio featuring professional experience, education, technical skills, and three pipeline projects. The GitHub repository is public.
+A responsive data engineering and data science portfolio featuring professional experience, education, technical skills, and three pipeline projects. The GitHub repository is public.
 
 **Portfolio:** [ishuapurva1996.github.io/personal-portfolio-website](https://ishuapurva1996.github.io/personal-portfolio-website/)
 
@@ -34,7 +34,7 @@ Edit copy and links in `index.html`, the design in `styles.css`, and interaction
 
 ## Design and assets
 
-The portfolio uses static HTML, CSS, and JavaScript with a black and violet theme, serif headings, a career timeline, and dashboard/architecture previews.
+The portfolio uses static HTML, CSS, and JavaScript with a black and violet theme, serif headings, a minimal Sources → Ingest → Transform → Insights pipeline, a career timeline, and dashboard/architecture previews.
 
 GitHub and LinkedIn SVG icons come from Primer Octicons and Bootstrap Icons under the MIT License; their notices are retained in `index.html`.
 
