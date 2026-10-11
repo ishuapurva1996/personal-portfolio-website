@@ -89,6 +89,28 @@
   const canvas = document.querySelector('#pipeline-canvas');
   const context = canvas.getContext('2d');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const pipelineFigure = document.querySelector('.hero-visual');
+  const pipelineSvg = document.querySelector('.pipeline-traces');
+  let pipelineVisible = false;
+  function managePipelineMotion() {
+    if (!pipelineFigure || !pipelineSvg) return;
+    const running = pipelineVisible && !document.hidden && !reducedMotion.matches;
+    pipelineFigure.dataset.motion = running ? 'running' : 'paused';
+    if (running) pipelineSvg.unpauseAnimations(); else pipelineSvg.pauseAnimations();
+  }
+  // Keep the complete diagram still whenever it is outside the visitor's view.
+  if (pipelineFigure && 'IntersectionObserver' in window) {
+    const pipelineObserver = new IntersectionObserver(entries => {
+      pipelineVisible = entries[0].isIntersecting;
+      managePipelineMotion();
+    });
+    pipelineObserver.observe(pipelineFigure);
+  } else {
+    pipelineVisible = true;
+  }
+  document.addEventListener('visibilitychange', managePipelineMotion);
+  reducedMotion.addEventListener('change', managePipelineMotion);
+  managePipelineMotion();
   let width = 0, height = 0, frame = 0, lastTime = 0;
   const dots = Array.from({length: 26}, (_, i) => ({x: ((i * 71 + 17) % 997) / 997, y: ((i * 131 + 41) % 991) / 991, speed: .00003 + (i % 3) * .00001}));
   function resizeCanvas() {

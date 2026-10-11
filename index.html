@@ -7,9 +7,9 @@
   <meta name="description" content="Pragya Apurva: MS Applied Data Intelligence student at SJSU, former Accenture Senior Analyst, seeking Summer 2027 data engineering and data science internships, with expected graduation in December 2027. Explore Airflow, Snowflake, dbt, and AWS pipeline projects.">
   <meta property="og:title" content="Pragya Apurva — Data Engineering &amp; Data Science Portfolio"><meta property="og:description" content="Reliable pipelines and thoughtful data models to surface actionable insights."><meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg?v=20261011-violet" type="image/svg+xml">
-  <link rel="stylesheet" href="instrument-serif.css"><link rel="stylesheet" href="dm-sans.css"><link rel="stylesheet" href="styles.css?v=20261011-circuit">
+  <link rel="stylesheet" href="instrument-serif.css"><link rel="stylesheet" href="dm-sans.css"><link rel="stylesheet" href="styles.css?v=20261011-moving-dots">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('pa-portfolio-theme')==='light'?'light':'dark'}catch{}</script>
-  <script src="script.js?v=20261011-violet" defer></script>
+  <script src="script.js?v=20261011-moving-dots" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -65,6 +65,9 @@ SOFTWARE.
 <div class="pipeline-circuit">
 <svg class="pipeline-traces" viewBox="0 0 560 410" fill="none" aria-hidden="true" focusable="false">
 <defs>
+  <path id="pipeline-source-route" d="M211 78H100l-30 30v62"/>
+  <path id="pipeline-output-route" d="M490 170h44l22 22v158l-41 25h45"/>
+  <path id="pipeline-lower-route" d="M0 362h103l24-24h117l31 31h155l36-36h94"/>
   <filter id="pipeline-glow" filterUnits="userSpaceOnUse" x="-40" y="-40" width="640" height="500" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="4"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
 <g class="circuit-track">
@@ -82,13 +85,18 @@ SOFTWARE.
   <circle cx="176" cy="218" r="2"/><circle cx="198" cy="200" r="2"/><circle cx="53" cy="398" r="2"/><circle cx="209" cy="361" r="2"/><circle cx="344" cy="355" r="2"/>
 </g>
 <g class="circuit-lit" filter="url(#pipeline-glow)">
-  <path d="M0 170h102l28 28h20l28-28h88l28-28h20l28 28h88l28 28h20l28-28h34"/>
+  <path id="pipeline-main-route" d="M0 170h102l28 28h20l28-28h88l28-28h20l28 28h88l28 28h20l28-28h34"/>
   <path class="circuit-feed" d="M0 108h27l37 37h6v25m0 0v-62l30-30h111"/>
   <path class="circuit-feed" d="M490 170h18l29-29h23M490 170h44l22 22v158l-41 25h45"/>
-  <circle cx="211" cy="78" r="2.5"/><circle cx="515" cy="375" r="2.5"/>
 </g>
 <path class="circuit-core" d="M0 170h102l28 28h20l28-28h88l28-28h20l28 28h88l28 28h20l28-28h34"/>
 <path class="circuit-packet" pathLength="100" d="M0 170h102l28 28h20l28-28h88l28-28h20l28 28h88l28 28h20l28-28h34"/>
+<g class="circuit-flow-dot"><circle class="circuit-dot-halo" r="7"/><circle class="circuit-dot-core" r="3.2"/><animateMotion dur="7s" begin="0s" repeatCount="indefinite" calcMode="linear"><mpath href="#pipeline-main-route"/></animateMotion></g>
+<g class="circuit-flow-dot"><circle class="circuit-dot-halo" r="7"/><circle class="circuit-dot-core" r="3.2"/><animateMotion dur="7s" begin="-2.333s" repeatCount="indefinite" calcMode="linear"><mpath href="#pipeline-main-route"/></animateMotion></g>
+<g class="circuit-flow-dot"><circle class="circuit-dot-halo" r="7"/><circle class="circuit-dot-core" r="3.2"/><animateMotion dur="7s" begin="-4.666s" repeatCount="indefinite" calcMode="linear"><mpath href="#pipeline-main-route"/></animateMotion></g>
+<g class="circuit-flow-dot"><circle class="circuit-dot-halo" r="7"/><circle class="circuit-dot-core" r="3.2"/><animateMotion dur="5s" begin="-1s" repeatCount="indefinite" calcMode="linear"><mpath href="#pipeline-source-route"/></animateMotion></g>
+<g class="circuit-flow-dot"><circle class="circuit-dot-halo" r="7"/><circle class="circuit-dot-core" r="3.2"/><animateMotion dur="6s" begin="-3s" repeatCount="indefinite" calcMode="linear"><mpath href="#pipeline-output-route"/></animateMotion></g>
+<g class="circuit-flow-dot"><circle class="circuit-dot-halo" r="7"/><circle class="circuit-dot-core" r="3.2"/><animateMotion dur="10s" begin="-4s" repeatCount="indefinite" calcMode="linear"><mpath href="#pipeline-lower-route"/></animateMotion></g>
 </svg>
 <ol class="hero-pipeline" role="list" aria-label="Data pipeline stages">
 <li><span class="pipeline-stage-mark"><svg class="pipeline-stage-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><span class="pipeline-stage-name">Sources</span><span class="pipeline-stage-detail">APIs + files</span></li>

@@ -85,7 +85,12 @@ h1 em { font-weight: 400; }
 .circuit-lit circle { fill: var(--text); stroke: var(--accent); }
 .circuit-feed { opacity: .55; }
 .circuit-core { stroke: var(--text); stroke-width: .65; opacity: .8; }
-.circuit-packet { stroke: var(--text); stroke-width: 2.5; stroke-dasharray: 3 97; stroke-dashoffset: 100; filter: url(#pipeline-glow); animation: pipeline-flow 7s linear infinite; }
+.circuit-packet { stroke: var(--text); stroke-width: 2.5; stroke-dasharray: 3 97; stroke-dashoffset: 100; filter: url(#pipeline-glow); animation: pipeline-flow 7s linear infinite; animation-play-state: paused; }
+.hero-visual[data-motion="running"] .circuit-packet { animation-play-state: running; }
+.circuit-flow-dot { filter: url(#pipeline-glow); }
+.circuit-dot-halo { fill: var(--accent); opacity: .22; }
+.circuit-dot-core { fill: var(--text); stroke: var(--accent); stroke-width: 1; }
+[data-theme="light"] .circuit-dot-core { fill: var(--accent); stroke: var(--bg); }
 @keyframes pipeline-flow { to { stroke-dashoffset: 0; } }
 .hero-pipeline { --stage-size: 56px; position: absolute; top: calc(41.4634146% - var(--stage-size) / 2); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; list-style: none; margin: 0; padding: 0; }
 .hero-pipeline li { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -100,7 +105,7 @@ h1 em { font-weight: 400; }
 [data-theme="light"] .circuit-core { stroke: var(--accent); opacity: 1; }
 [data-theme="light"] .circuit-packet { stroke: var(--accent); }
 [data-theme="light"] .circuit-lit { stroke-width: 1.5; }
-@media (prefers-reduced-motion: reduce) { .circuit-packet { display: none; } }
+@media (prefers-reduced-motion: reduce) { .circuit-packet, .circuit-flow-dot { display: none; } }
 .scroll-cue { display: inline-flex; align-items: center; gap: 18px; font-size: 12px; color: var(--secondary); letter-spacing: .12em; text-transform: uppercase; margin-top: 30px; }
 .scroll-cue .icon { transform: rotate(90deg); width: 14px; }
 .content-section { padding-block: 104px; border-top: 1px solid var(--line); }
