@@ -74,7 +74,7 @@ h1 em { font-weight: 400; }
 .orbit-packet { transform-origin: 220px 220px; animation: data-travel 28s linear infinite; }
 @keyframes data-travel { to { transform: rotate(360deg); } }
 .visual-caption { font-size: 12px; color: var(--secondary); letter-spacing: .03em; margin: -12px 0 0; }
-.hero-facts { display: grid; grid-template-columns: 1fr 1fr 1.35fr; max-width: 830px; gap: 36px; margin-top: 47px; }
+.hero-facts { display: grid; grid-template-columns: 1fr; max-width: 280px; gap: 36px; margin-top: 47px; }
 .hero-facts > div { border-top: 1px solid var(--line); padding-top: 18px; }
 .hero-facts strong { font: 400 40px/1.2 var(--display); font-variant-numeric: tabular-nums; }
 .hero-facts strong span { color: var(--accent); }
@@ -188,7 +188,7 @@ li::marker { color: var(--accent); }
   h1 { font-size: clamp(72px, 19vw, 90px); } .hero-role { font-size: 12px; letter-spacing: .025em; margin: 22px 0 16px; }
   .hero-summary { font-size: 15px; } .hero-actions { margin-top: 24px; gap: 10px; }
   .hero-actions .text-link { width: 100%; } .hero-visual { display: none; }
-  .hero-facts { margin-top: 34px; gap: 16px; grid-template-columns: 1fr 1fr 1.2fr; } .hero-facts strong { font-size: 31px; } .hero-facts p { font-size: 12px; }
+  .hero-facts { margin-top: 34px; gap: 16px; grid-template-columns: 1fr; } .hero-facts strong { font-size: 31px; } .hero-facts p { font-size: 12px; }
   .hero-facts strong span { font-size: 23px; } .scroll-cue { margin-top: 30px; }
   .content-section { padding-block: 65px; } h2 { margin-bottom: 32px; }
   .about-grid { grid-template-columns: 1fr; gap: 26px; } .lead { font-size: 21px; } .about-copy { font-size: 14px; }
